@@ -1,10 +1,102 @@
+@font-face {
+  font-family: 'Auditype Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Auditype Bold'), url('./content/fonts/auditype-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Auditype ExtendedBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Auditype ExtendedBold'), url('./content/fonts/auditype-extendedbold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Auditype ExtendedNormal';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Auditype ExtendedNormal'), url('./content/fonts/auditype-extendednormal.woff') format('woff');
+}
+@font-face {
+  font-family: 'Auditype Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Auditype Italic'), url('./content/fonts/auditype-italic.woff') format('woff');
+}
+
 .App {
   text-align: center;
+  font-family: 'Auditype Italic';
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: top / contain no-repeat url(./content/audi.png);
+}
+.first {
+  margin-left: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mainH , .minorH {
+  color: #fff;
+}
+.mainH{
+  text-shadow: 4px 4px 0px #fff;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 110px;
+  font-size: 52px;
+  margin-bottom: 38px;
+}
+.minorH{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 18px;
+}
+.lowerBlock{
+  margin-top: 32px;
+  margin-bottom: 35px;
+}
+.inventory{
+  height: 40px;
+  width: 167px;
+  border-radius: 45px;
+  font-size: 7px;
+  line-height: 7px;
+  background-color: rgb(238,41,65);
+  box-shadow: 4px 4px 0px rgb(224,35,58);
+  border: 0;
+  color: white;
+}
+.inventory:focus{
+  outline-width: 0;
+}
+.info-block{
+  margin-top: 157px;
+  height: 80px;
+  width: 500px;
+}
+
+.baner-block{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.baner{
+  height: 333px;
+  width: 1080px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
